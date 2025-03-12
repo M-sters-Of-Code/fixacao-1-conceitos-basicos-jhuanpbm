@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace FixacaoConceitosBasicos1.Model
 {
-    internal class CalculaAluguelCarro
+    public static class CalculaAluguelCarro
     {
-        package Model;
-
-        public class CalculaAluguelCarro
+        public static double Calcular(int dias, int quilometragemInicial, int quilometragemFinal)
         {
-            public static double Calcular(int dias, int quilometragemInicial, int quilometragemFinal)
-            {
-                double precoPorDia = 100.0;
-                double precoPorKm = 0.75;
-                int kmRodados = quilometragemFinal - quilometragemInicial;
-
-                return (dias * precoPorDia) + (kmRodados * precoPorKm);
-            }
+            const double precoPorDia = 100.0; // Exemplo de valor fixo por dia
+            const double precoPorKm = 0.75; // Exemplo de valor fixo por km rodado
+            
+            int kmRodados = quilometragemFinal - quilometragemInicial;
+            return (dias * precoPorDia) + (kmRodados * precoPorKm);
         }
     }
 }
