@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace FixacaoConceitosBasicos1.Model
 {
-    internal class CalculaAumento
+    public static class CalculaAumento
     {
-        package Model;
-
-        public class CalculaAumento
+        public static double Calcular(double salario, double aumento)
         {
-            public static double Calcular(double salario, double aumento)
-            {
-                return salario + aumento;
-            }
+            return salario + aumento;
         }
     }
-}
