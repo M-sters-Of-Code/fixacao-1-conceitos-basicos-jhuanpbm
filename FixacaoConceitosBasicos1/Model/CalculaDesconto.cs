@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace FixacaoConceitosBasicos1.Model
 {
-    internal class CalculaDesconto
+    public static class CalculaDesconto
     {
-        package Model;
-
-        public class CalculaDesconto
+        public static double Calcular(double valor, double desconto)
         {
-            public static double Calcular(double valor, double desconto)
-            {
-                return valor - desconto;
-            }
+            return valor - desconto;
         }
     }
-}
